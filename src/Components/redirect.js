@@ -22,7 +22,9 @@ const Redirect = () => {
 
     return (
         <div className="flex flex-col items-center justify-center h-screen">
-            <p className="text-customGray">We are yet to rebrand . . .</p>
+            {url === 'https://aadu.agency' && (
+                <p className="text-customGray">We are yet to rebrand . . .</p>
+            )}
             <h1 className="text-2xl">Redirecting to our former website in {seconds} seconds...</h1>
             <a href={url} className="text-blue-500 ml-2">{url}</a>
         </div>
