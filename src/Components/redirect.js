@@ -22,11 +22,11 @@ const Redirect = () => {
 
     return (
         <>
-            {url === 'https://aadu.agency/' ? (
+            {url === url ? (
                 <div className="flex flex-col items-center justify-center h-screen">
-                    <p className="text-customGray">We are yet to rebrand . . .</p>
+                    <p className="text-customGray">Website under contruction . . .</p>
                     <h1 className="text-2xl">
-                        Redirecting to our former website in {seconds} seconds...
+                        Redirecting to our checkout website in {seconds} seconds...
                     </h1>
                     <a href={url} className="text-blue-500 ml-2">{url}</a>
                 </div>
